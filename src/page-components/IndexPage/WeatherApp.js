@@ -13,7 +13,7 @@ import './index.scss';
 
 export default function WeatherApp() {
   /* ******************************** CONSTANTS ******************************* */
-  const URL = 'http://api.openweathermap.org/data/2.5/weather';
+  const URL = 'https://api.openweathermap.org/data/2.5/weather';
   const INITIAL_STATE = {
     sys: {
       country: '',
@@ -39,7 +39,7 @@ export default function WeatherApp() {
     setError(false);
     axios(URL, {
       params: {
-        q: search,
+        q: search || 'tunisia',
         appid: 'f33a484cf794d08d0148764789aaba32',
         units: 'metric',
       },
@@ -69,30 +69,32 @@ export default function WeatherApp() {
             placeholder="search"
           />
         </form>
-        <div className="result">
-          {error && <p>hello error!</p>}
-          {!error && (
-            <>
-              <div className="name">
-                <p>{query.name}</p>
-                <p className="country">{query.sys.country}</p>
-              </div>
-              <p className="temp">
-                {Math.round(query.main.temp)}
-                °C
-              </p>
-              <div className="icon">
-                <img
-                  src={getWeatherIcon(query.weather[0].icon)}
-                  alt="weather-icon"
-                />
-              </div>
-              <div className="description">
-                <p>{query.weather[0].description}</p>
-              </div>
-            </>
-          )}
-        </div>
+        {search && (
+          <div className="result">
+            {error && <p>hello error!</p>}
+            {!error && (
+              <>
+                <div className="name">
+                  <p>{query.name}</p>
+                  <p className="country">{query.sys.country}</p>
+                </div>
+                <p className="temp">
+                  {Math.round(query.main.temp)}
+                  °C
+                </p>
+                <div className="icon">
+                  <img
+                    src={getWeatherIcon(query.weather[0].icon)}
+                    alt="weather-icon"
+                  />
+                </div>
+                <div className="description">
+                  <p>{query.weather[0].description}</p>
+                </div>
+              </>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
