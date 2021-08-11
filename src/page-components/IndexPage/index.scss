@@ -1,0 +1,54 @@
+.weather-app {
+  .background {
+    background-image: url(../../images/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .search-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .input-search {
+      outline: none;
+      padding: 20px 7%;
+      border-radius: 20px;
+      border: none;
+      background: hsla(0, 0%, 98%, 0.85);
+      width: 350px;
+      font-size: 16px;
+    }
+    .result {
+      background: hsla(0, 0%, 98%, 0.85);
+      width: 350px;
+      padding: 20px 7%;
+      margin-top: 2rem;
+      border-radius: 20px;
+      text-align: center;
+      .name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        .country {
+          background-color: #ff8c00;
+          font-size: 14px;
+          margin-left: 8px;
+          padding: 2px 6px;
+          border-radius: 20px;
+          color: white;
+        }
+      }
+      .temp {
+        font-size: 45px;
+        font-weight: 700;
+      }
+      .description {
+        text-transform: capitalize;
+        font-size: 24px;
+      }
+    }
+  }
+}

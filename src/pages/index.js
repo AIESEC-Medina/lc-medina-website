@@ -4,11 +4,9 @@
 
 // Packages
 import * as React from 'react';
-import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 
 // UI lib components
-import { Container } from 'react-grid-system';
+import WeatherApp from '../page-components/IndexPage/WeatherApp';
 
 // Page wrappers
 import Layout from '../shared/Layout';
@@ -24,24 +22,8 @@ import Seo from '../shared/Seo';
 function IndexPage() {
   return (
     <Layout>
-      <Seo title="Home" />
-      <Container>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <StaticImage
-          src="../images/gatsby-astronaut.png"
-          width={300}
-          quality={95}
-          formats={['AUTO', 'WEBP', 'AVIF']}
-          alt="A Gatsby astronaut"
-          style={{ marginBottom: '1.45rem' }}
-        />
-        <p>
-          <Link to="/page-2/">Go to page 2</Link>
-          <br />
-        </p>
-      </Container>
+      <Seo title="Weather APP" />
+      <WeatherApp />
     </Layout>
   );
 }
