@@ -3,7 +3,7 @@
 /* -------------------------------------------------------------------------- */
 
 // Packages
-import * as React from 'react';
+import React from 'react';
 
 // UI lib components
 import { Container } from 'react-grid-system';

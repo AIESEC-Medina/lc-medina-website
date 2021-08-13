@@ -1,8 +1,8 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
-
-// Imports global styles
 import './src/shared/styles/index.scss';
+
+export const onServiceWorkerUpdateReady = () => {
+  const answer = 'This app has been updated. display the latest version?';
+  if (answer === true) {
+    window.location.reload();
+  }
+};

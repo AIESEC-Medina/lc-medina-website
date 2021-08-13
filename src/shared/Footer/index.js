@@ -5,10 +5,10 @@
 // Packages
 import React from 'react';
 
-const Header = () => (
-  <header>
-    <p>hello from header</p>
-  </header>
+const Footer = () => (
+  <div>
+    <p>hello from footer</p>
+  </div>
 );
 
-export default Header;
+export default Footer;
