@@ -9,12 +9,13 @@ import React from 'react';
 import { Container } from 'react-grid-system';
 
 // Page wrappers
-import Layout from '../../shared/Layout';
 import Seo from '../../shared/Seo';
 import '../../shared/styles/partnership.scss';
 
 // Local page components
-import Partimage from '../../assets/images/azza.png';
+import Logo from '../../assets/medina-logo.png';
+import Partner from '../../assets/images/partner.png';
+import Side from '../../assets/images/azza.png';
 // @TODO Import local components here
 
 /* -------------------------------------------------------------------------- */
@@ -23,11 +24,31 @@ import Partimage from '../../assets/images/azza.png';
 
 function IndexPage() {
   return (
-    <Layout>
+    <>
       <Seo title="Partnership" />
-      <Container id="body">
+      <Container id="main">
         <Container id="image">
-          <img src={Partimage} alt="azza" />
+          <img src={Logo} alt="logo" />
+          <img src={Side} alt="partner" />
+          <div id="gradient" />
+          <div id="textoverlay">
+            <h3>
+              Have you thought about connecting and recruiting young national or
+              international talent for your company?
+            </h3>
+            <p>
+              AIESEC is a global network that can connect your brand to young
+              national and international talents from different areas, such as:
+              Marketing, Customer Service, Sales, Design and others. With us,
+              you can expand your focus on generating diversity and results,
+              through expansion and global positioning.
+            </p>
+            <p>
+              Schedule a conversation with us and understand how a more
+              globalized, international and innovative work environment is just
+              a step away and simpler than you might think.
+            </p>
+          </div>
         </Container>
         <Container id="formsection">
           <h1 style={{ marginBottom: '60px' }}>Sign up for more information</h1>
@@ -74,7 +95,7 @@ function IndexPage() {
                 <textarea id="message" />
               </label>
             </div>
-            <div className="formgroup">
+            <div id="lastchild">
               <label htmlFor="agreement">
                 <input type="checkbox" id="agreement" />I agree to receive
                 communications from AIESEC MEDINA
@@ -82,9 +103,15 @@ function IndexPage() {
             </div>
             <input type="submit" value="Sign me UP" />
           </form>
+          <p>Companies that already work with us:</p>
+          <Container id="partner">
+            <img src={Partner} alt="partner" />
+            <img src={Partner} alt="partner" />
+            <img src={Partner} alt="partner" />
+          </Container>
         </Container>
       </Container>
-    </Layout>
+    </>
   );
 }
 
