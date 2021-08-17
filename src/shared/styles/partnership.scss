@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+#body {
+  background-color: #f8f9fa;
+  display: flex;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: lato;
+  #image {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: fixed;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    img {
+      width: 567px;
+      height: 1080px;
+      mask-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1),
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  }
+  #formsection {
+    margin-top: 5rem;
+    margin-left: 14rem !important;
+    padding-right: 0 !important;
+    font-weight: 900;
+    width: 120%;
+    text-align: left;
+    .inputs {
+      display: flex;
+      justify-content: space-between;
+      input[type='text'],
+      input[type='tel'],
+      input[type='email'],
+      input[type='url'] {
+        padding: 12px;
+        width: 60%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      textarea {
+        width: 65%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+      }
+    }
+    .formgroup {
+      margin-top: 40px;
+    }
+    form {
+      width: 100%;
+    }
+  }
+}
