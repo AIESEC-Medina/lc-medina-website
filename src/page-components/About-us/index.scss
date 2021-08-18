@@ -1,0 +1,95 @@
+@import url('../../shared/styles/global.scss');
+@import url("https://fonts.googleapis.com");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F8F9FA;
+}
+.TopSection-container{
+    background: transparent url('../../assets/images/backgroundTopsection.svg') fixed ;
+    width: 100vw;
+    height: 833px;
+    position: relative;
+    .Informations-container{
+        position: relative;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        img[alt="MedinaLogo"]{
+            background-color: transparent;
+            width: 385px;
+            height: 606px;
+            margin: auto
+        };
+        .intro-info {
+            background-color: transparent !important;
+            position: absolute;
+            top: 100px;
+            left: 605px;
+            right: 605px;
+            h1{
+                background-color: transparent;
+                width: 710px;
+                padding-bottom: 0;
+                margin-bottom: 22px;
+                color: #00C16E;
+                font-family: 'Lato', sans-serif; 
+                font-weight: 400;
+                font-size: 52px;
+                text-align: left;
+                margin: auto 0;
+            }
+          h2{
+              background-color: transparent;
+              width: 452px;
+              text-align: center;
+              margin: 22px auto;
+              margin-bottom: 0;
+              color: #707070;
+              right: 734px;
+              left: 734px; ;
+              font-size: 30px;
+              letter-spacing: 0.2px;
+             font-family: 'Lato', sans-serif;
+             font-weight: 540;
+
+          }
+          p{
+              background: transparent;
+              color: #00000066;
+              text-align: center;
+              margin: 14px auto;
+              margin-bottom: 0;
+              height: 67px;
+              width: 567px;
+              font-size: 27px;
+              letter-spacing: 0.14px;
+              font-family: 'Lato', sans-serif;
+
+          }
+          h3{
+              background: #00C16E;
+              color: #F8F9FA;
+              width: 185px;
+              height: 24px;
+              margin: 25px auto;
+              margin-bottom: 1px;
+              border-radius: 6px;
+              font-size: 17px;
+              letter-spacing: 0.1px;
+              font-family: 'Lato', sans-serif;
+              text-align: center;
+              padding: 4px 11px;
+              font-weight: 150;
+          }
+           
+
+        }
+        
+    }
+}
