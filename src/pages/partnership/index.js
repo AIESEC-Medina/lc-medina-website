@@ -41,9 +41,11 @@ function IndexPage() {
             <p>
               AIESEC is a global network that can connect your brand to young
               national and international talents from different areas, such as:
-              Marketing, Customer Service, Sales, Design and others. With us,
-              you can expand your focus on generating diversity and results,
-              through expansion and global positioning.
+              Marketing, Customer Service, Sales, Design and others.
+            </p>
+            <p>
+              With us, you can expand your focus on generating diversity and
+              results, through expansion and global positioning.
             </p>
             <p>
               Schedule a conversation with us and understand how a more
