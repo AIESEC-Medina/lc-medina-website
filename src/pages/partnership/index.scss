@@ -15,6 +15,12 @@ body {
   padding: 0 !important;
   font-family: Lato;
   background-size: 567px 1080px;
+  #language {
+    position: absolute;
+    top: 57px;
+    right: 0px;
+    cursor: pointer;
+  }
   #image {
     margin: 0 !important;
     padding: 0 !important;

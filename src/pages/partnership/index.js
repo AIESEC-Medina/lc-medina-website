@@ -10,12 +10,13 @@ import { Container } from 'react-grid-system';
 
 // Page wrappers
 import Seo from '../../shared/Seo';
-import '../../shared/styles/partnership.scss';
+import './index.scss';
 
 // Local page components
 import Logo from '../../assets/medina-logo.png';
 import Partner from '../../assets/images/partner.png';
 import Side from '../../assets/images/azza.png';
+import Globe from '../../assets/icons/earth-icon.svg';
 // @TODO Import local components here
 
 /* -------------------------------------------------------------------------- */
@@ -27,6 +28,7 @@ function IndexPage() {
     <>
       <Seo title="Partnership" />
       <Container id="main">
+        <img src={Globe} alt="change language" id="language" />
         <Container id="image">
           <img src={Logo} alt="logo" />
           <img src={Side} alt="partner" />
