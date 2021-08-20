@@ -35,8 +35,10 @@ const Header = () => (
         <li>
           <a href>Partnership</a>
         </li>
+        <li>
+          <img src={Globe} alt="change language" />
+        </li>
       </ul>
-      <img src={Globe} alt="change language" />
     </div>
   </div>
 );

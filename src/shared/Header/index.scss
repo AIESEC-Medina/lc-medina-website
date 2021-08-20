@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
 #navbar {
   font-family: lato;
   color: #707070;
@@ -7,27 +11,33 @@
   display: flex;
   vertical-align: middle;
   background-color: #f8f9fa;
+  max-height: 119px;
   img[alt='logo'] {
     width: 110px;
     height: 76px;
     margin-left: 130px;
-    margin-top: 30px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    cursor: pointer;
   }
   img[alt='change language'] {
-    margin-top: 57px;
-    height: 23px;
-    margin-left: 37px;
+    position: absolute;
+    right: -50px;
+    cursor: pointer;
   }
   div {
+    position: relative;
     text-align: center;
     margin-right: 129px;
     margin-left: auto;
     display: flex;
     white-space: nowrap;
     ul {
-      margin-top: 57px;
+      position: absolute;
       list-style: none;
       padding-left: 0 !important;
+      right: 0;
+      top: 40px;
     }
     li {
       display: inline;
