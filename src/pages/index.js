@@ -24,9 +24,7 @@ function IndexPage() {
   return (
     <Layout>
       <Seo title="Home" />
-      <Container>
-        <PartnerSlider />
-      </Container>
+      <PartnerSlider />
     </Layout>
   );
 }

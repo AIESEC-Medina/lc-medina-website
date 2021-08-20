@@ -23,16 +23,41 @@ function PartnerSlider() {
   return (
     <div id="slider-main">
       <h2>Our premium partners</h2>
+      <p>
+        Employers, higher education institutions and like-minded organizations
+        have partnered with us since AIESEC in Manouba was founded in 1989.
+      </p>
       <div id="slider">
-        <img src={PartnerImg} alt="partner" />
-        <img src={PartnerImg} alt="partner" />
-        <img src={PartnerImg} alt="partner" />
-        <img src={PartnerImg} alt="partner" />
-        <img src={PartnerImg} alt="partner" />
-        <img src={PartnerImg} alt="partner" />
-        <img src={PartnerImg} alt="partner" />
-        <img src={PartnerImg} alt="partner" />
-        <img src={PartnerImg} alt="partner" />
+        <div>
+          <img src={PartnerImg} alt="partner1" />
+          <img src={PartnerImg} alt="partner2" />
+          <img src={PartnerImg} alt="partner3" />
+          <img src={PartnerImg} alt="partner4" />
+          <img src={PartnerImg} alt="partner1" />
+          <img src={PartnerImg} alt="partner2" />
+          <img src={PartnerImg} alt="partner3" />
+          <img src={PartnerImg} alt="partner4" />
+        </div>
+        <div>
+          <img src={PartnerImg} alt="partner1" />
+          <img src={PartnerImg} alt="partner2" />
+          <img src={PartnerImg} alt="partner3" />
+          <img src={PartnerImg} alt="partner4" />
+          <img src={PartnerImg} alt="partner1" />
+          <img src={PartnerImg} alt="partner2" />
+          <img src={PartnerImg} alt="partner3" />
+          <img src={PartnerImg} alt="partner4" />
+        </div>
+        <div>
+          <img src={PartnerImg} alt="partner1" />
+          <img src={PartnerImg} alt="partner2" />
+          <img src={PartnerImg} alt="partner3" />
+          <img src={PartnerImg} alt="partner4" />
+          <img src={PartnerImg} alt="partner1" />
+          <img src={PartnerImg} alt="partner2" />
+          <img src={PartnerImg} alt="partner3" />
+          <img src={PartnerImg} alt="partner4" />
+        </div>
       </div>
     </div>
   );
