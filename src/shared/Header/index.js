@@ -6,7 +6,6 @@
 import React from 'react';
 
 // UI lib components
-import { Container } from 'react-grid-system';
 import './index.scss';
 
 // Local page components
