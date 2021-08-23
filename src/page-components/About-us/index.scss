@@ -8,7 +8,7 @@
     background: #F8F9FA;
 }
 .TopSection-container{
-    background: transparent url('../../assets/images/backgroundTopsection.svg') fixed ;
+    background: transparent url('../../assets/images/backgroundTopsection.svg') center ;
     width: 100vw;
     height: 833px;
     position: relative;
@@ -21,7 +21,7 @@
         align-items: center;
         position: relative;
         img[alt="MedinaLogo"]{
-            background-color: transparent;
+         
             width: 385px;
             height: 606px;
             margin: auto
@@ -41,7 +41,7 @@
                 font-family: 'Lato', sans-serif; 
                 font-weight: 400;
                 font-size: 52px;
-                text-align: left;
+                text-align: center;
                 margin: auto 0;
             }
           h2{
