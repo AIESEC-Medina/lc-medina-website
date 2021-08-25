@@ -6,6 +6,7 @@ import React from 'react';
 import Layout from '../shared/Layout/index';
 import TopSection from '../page-components/About-us/Top-section';
 import Seo from '../shared/Seo/index';
+import Ourstory from '../page-components/About-us/ourStory';
 
 function AboutUs() {
   return (
@@ -13,6 +14,7 @@ function AboutUs() {
       <Seo title="About-Us" />
       <Layout>
         <TopSection />
+        <Ourstory />
       </Layout>
     </>
   );
