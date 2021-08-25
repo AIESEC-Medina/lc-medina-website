@@ -15,6 +15,7 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:mdx/recommended',
+    'prettier',
   ],
   settings: {
     react: {
