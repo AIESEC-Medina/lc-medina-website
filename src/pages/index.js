@@ -13,6 +13,7 @@ import Layout from '../shared/Layout';
 import Seo from '../shared/Seo';
 
 // Local page components
+import PartnerSlider from '../page-components/Partnerslider';
 // @TODO Import local components here
 
 /* -------------------------------------------------------------------------- */
