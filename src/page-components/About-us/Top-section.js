@@ -24,13 +24,13 @@ function TopSection() {
               wrapper="w"
               steps={[
                 'intership with aiesec',
-                1000,
+                1500,
                 'teach with aiesec',
-                1000,
+                1500,
                 'membership with aiesec',
-                1000,
+                1500,
                 'develop yourself with aiesec',
-                1000,
+                1500,
               ]}
             />
           </h1>
