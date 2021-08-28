@@ -2,19 +2,28 @@
 /*                                Dependencies                                */
 /* -------------------------------------------------------------------------- */
 import React from 'react';
+
 // Page wrapper
 import Layout from '../shared/Layout/index';
-import TopSection from '../page-components/About-us/Top-section';
 import Seo from '../shared/Seo/index';
-import Ourstory from '../page-components/About-us/ourStory';
 
+// Local page components
+import TopSection from '../page-components/AboutUsPage/TopSection';
+import WhoAreWe from '../page-components/AboutUsPage/WhoAreWe';
+// import Ourstory from '../page-components/AboutUsPage/OurStory';
+
+/* -------------------------------------------------------------------------- */
+/*                               About us Page                                */
+/* -------------------------------------------------------------------------- */
 function AboutUs() {
+  /* ******************************** RENDERING ******************************* */
   return (
     <>
-      <Seo title="About-Us" />
+      <Seo title="About us" />
       <Layout>
         <TopSection />
-        <Ourstory />
+        <WhoAreWe />
+        {/* <Ourstory /> */}
       </Layout>
     </>
   );

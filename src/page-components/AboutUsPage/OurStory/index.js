@@ -4,16 +4,21 @@
 
 // Packages
 import React from 'react';
-// Import photos:
-import Photo1 from '../../assets/images/Photo1.png';
-import Photo2 from '../../assets/images/Medina.png';
-import Photo3 from '../../assets/images/Image 3.png';
-import Photo4 from '../../assets/images/image4.png';
+
+// local images:
+import Photo1 from '../../../assets/images/old-AIESEC.png';
+import Photo2 from '../../../assets/images/medina.png';
+import Photo3 from '../../../assets/images/global-village.png';
+import Photo4 from '../../../assets/images/medina-up.png';
+
+// Styles
+import './index.scss';
 
 /* -------------------------------------------------------------------------- */
-/*                                  component                                 */
+/*                             Our Story Section                              */
 /* -------------------------------------------------------------------------- */
 function OurStory() {
+  /* ******************************** RENDERING ******************************* */
   return (
     <div className="OurStory-container">
       <h1 className="story-heading">Our Story</h1>

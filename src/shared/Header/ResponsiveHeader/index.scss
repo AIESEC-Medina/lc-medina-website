@@ -1,13 +1,9 @@
-.active-navbar {
-  background-color: white;
-  box-shadow: 0px 0px 6px #0000001a;
-}
-.navbar {
+.responsive-navbar {
   font-family: lato;
   color: #707070;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 20px 0;
   position: fixed;
   top: 0;
@@ -16,20 +12,20 @@
   transition: 0.1s ease-in-out;
   .logo {
     width: 70px;
+    padding-left: 25px;
+  }
+  .menu-icon {
+    margin-right: 25px;
   }
   .translation-img {
     margin-left: 40px;
     width: 18px;
   }
   .nav-content {
-    text-align: center;
-    display: flex;
     white-space: nowrap;
-    align-items: center;
+    position: absolute;
     .list {
       list-style: none;
-      display: flex;
-      align-items: center;
       .list-item {
         position: relative;
         transition: 1s;
@@ -50,12 +46,11 @@
             content: "";
             position: absolute;
             bottom: -5px;
-            left: 0%;
+            left: 0;
             width: 0%;
             height: 1.5px;
             background-color: #037ef3;
             transition: 0.15s ease-in-out;
-            transform-origin: center;
           }
           &:hover:after {
             width: 100%;
@@ -63,33 +58,6 @@
           &:hover,
           &:active {
             color: #000;
-          }
-        }
-        .collapse-list {
-          transition: 2s ease-in-out;
-          display: none;
-          position: absolute;
-          margin-top: 0.75rem !important;
-          left: 2rem;
-          background-color: white;
-          box-shadow: 0px 0px 6px #0000001a;
-          border-radius: 2px;
-          list-style: none;
-          .collapse-item {
-            padding: 10px 14px;
-            text-align: left;
-            &:hover {
-              background: #0000000d;
-              a {
-                color: black;
-              }
-            }
-            a {
-              color: #707070;
-              text-decoration: none;
-              width: 100%;
-              display: flex;
-            }
           }
         }
       }

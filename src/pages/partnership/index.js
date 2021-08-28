@@ -5,39 +5,35 @@
 // Packages
 import React from 'react';
 
-// UI lib components
-import { Container } from 'react-grid-system';
-
 // Page wrappers
 import Seo from '../../shared/Seo';
-import './index.scss';
 
-// Local page components
+// Local images
 import Logo from '../../assets/medina-logo.png';
 import Partner from '../../assets/images/partner.png';
-import Side from '../../assets/images/azza.png';
 import Globe from '../../assets/icons/earth-icon.svg';
-// @TODO Import local components here
+
+// Style
+import './index.scss';
 
 /* -------------------------------------------------------------------------- */
-/*                                    Page                                    */
+/*                            Partnership Page                                */
 /* -------------------------------------------------------------------------- */
 
-function IndexPage() {
+function PartnershipPage() {
   return (
     <>
       <Seo title="Partnership" />
-      <Container id="main">
+      <div id="main">
         <img src={Globe} alt="change language" id="language" />
-        <Container id="image">
-          <img src={Logo} alt="logo" />
-          <img src={Side} alt="partner" />
-          <div id="gradient" />
+        <div className="side-image">
+          <img className="logo" src={Logo} alt="logo" />
+          <div className="gradient" />
           <div id="textoverlay">
-            <h3>
+            <span>
               Have you thought about connecting and recruiting young national or
               international talent for your company?
-            </h3>
+            </span>
             <p>
               AIESEC is a global network that can connect your brand to young
               national and international talents from different areas, such as:
@@ -53,9 +49,9 @@ function IndexPage() {
               a step away and simpler than you might think.
             </p>
           </div>
-        </Container>
-        <Container id="formsection">
-          <h1 style={{ marginBottom: '60px' }}>Sign up for more information</h1>
+        </div>
+        <div id="formsection">
+          <h1>Sign up for more information</h1>
           <form>
             <div className="formgroup">
               <label htmlFor="fullname" className="inputs">
@@ -105,18 +101,22 @@ function IndexPage() {
                 communications from AIESEC MEDINA
               </label>
             </div>
-            <input type="submit" value="Sign me UP" />
+            <div className="submit-btn">
+              <button type="submit">Sign me up</button>
+            </div>
           </form>
-          <p>Companies that already work with us:</p>
-          <Container id="partner">
-            <img src={Partner} alt="partner" />
-            <img src={Partner} alt="partner" />
-            <img src={Partner} alt="partner" />
-          </Container>
-        </Container>
-      </Container>
+          <div className="partners-section">
+            <p className="title">Companies that already work with us:</p>
+            <div className="partner-slider">
+              <img src={Partner} alt="partner" />
+              <img src={Partner} alt="partner" />
+              <img src={Partner} alt="partner" />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
 
-export default IndexPage;
+export default PartnershipPage;

@@ -3,14 +3,16 @@
 /* -------------------------------------------------------------------------- */
 
 // Packages
-
 import React from 'react';
 import Typical from 'react-typical';
-import Logo from '../../assets/icons/LogoMedina.png';
+
+// Local images
+import Logo from '../../../assets/icons/LogoMedina.png';
+
 // Style
 import './index.scss';
 /* -------------------------------------------------------------------------- */
-/*                                  component                                 */
+/*                                Top Section                                 */
 /* -------------------------------------------------------------------------- */
 function TopSection() {
   return (
@@ -18,7 +20,7 @@ function TopSection() {
       <div className="Informations-container">
         <img src={Logo} alt="MedinaLogo" />
         <div className="intro-info">
-          <h1>
+          <h1 className="animated-text">
             <Typical
               loop={Infinity}
               wrapper="w"
@@ -34,12 +36,12 @@ function TopSection() {
               ]}
             />
           </h1>
-          <h2>We are a youth leadership movement</h2>
-          <p>
+          <h2 className="what-are-we">We are a youth leadership movement</h2>
+          <p className="description">
             We are passionately driven by one cause, peace and fulfillment of
             humankinds potential.
           </p>
-          <h3>in Tunisia since 1989</h3>
+          <h3 className="badge">in Tunisia since 1989</h3>
         </div>
       </div>
     </div>
