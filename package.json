@@ -69,7 +69,7 @@
     "format-check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint-fix": "eslint --ext .js ./ --fix",
     "format-fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "yarn && npm run develop",
     "serve": "gatsby build && gatsby serve",
     "clean": "gatsby clean",
     "storybook": "start-storybook -s ./ -p 6006 ",
