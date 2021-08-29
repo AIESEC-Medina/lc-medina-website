@@ -24,12 +24,12 @@ function PartnershipPage() {
   return (
     <>
       <Seo title="Partnership" />
-      <div id="main">
-        <img src={Globe} alt="change language" id="language" />
-        <div className="side-image">
-          <img className="logo" src={Logo} alt="logo" />
+      <div id="partnership-page">
+        <img src={Globe} alt="change language" className="change-language" />
+        <div id="side-image">
+          <img className="side-logo" src={Logo} alt="logo" />
           <div className="gradient" />
-          <div id="textoverlay">
+          <div className="sidetext">
             <span>
               Have you thought about connecting and recruiting young national or
               international talent for your company?
@@ -54,49 +54,49 @@ function PartnershipPage() {
           <h1>Sign up for more information</h1>
           <form>
             <div className="formgroup">
-              <label htmlFor="fullname" className="inputs">
+              <label htmlFor="fullname" className="labels">
                 Full name &nbsp;
-                <input id="fullname" type="text" />
+                <input id="fullname" className="inputs" type="text" />
               </label>
             </div>
             <div className="formgroup">
-              <label htmlFor="email" className="inputs">
+              <label htmlFor="email" className="labels">
                 Email &nbsp;
-                <input id="email" type="email" />
+                <input id="email" className="inputs" type="email" />
               </label>
             </div>
             <div className="formgroup">
-              <label htmlFor="telephone" className="inputs">
+              <label htmlFor="telephone" className="labels">
                 Telephone &nbsp;
-                <input id="telephone" type="tel" />
+                <input id="telephone" className="inputs" type="tel" />
               </label>
             </div>
             <div className="formgroup">
-              <label htmlFor="company" className="inputs">
+              <label htmlFor="company" className="labels">
                 Company &nbsp;
-                <input id="company" type="text" />
+                <input id="company" className="inputs" type="text" />
               </label>
             </div>
             <div className="formgroup">
-              <label htmlFor="location" className="inputs">
+              <label htmlFor="location" className="labels">
                 Location &nbsp;
-                <input id="location" type="text" />
+                <input id="location" className="inputs" type="text" />
               </label>
             </div>
             <div className="formgroup">
-              <label htmlFor="website" className="inputs">
+              <label htmlFor="website" className="labels">
                 Website &nbsp;
-                <input id="website" type="url" />
+                <input id="website" className="inputs" type="url" />
               </label>
             </div>
             <div className="formgroup">
-              <label htmlFor="message" className="inputs">
+              <label htmlFor="message" className="labels">
                 Message &nbsp;
                 <textarea id="message" />
               </label>
             </div>
-            <div id="lastchild">
-              <label htmlFor="agreement">
+            <div className="formgroup">
+              <label htmlFor="agreement" className="agreelabel">
                 <input type="checkbox" id="agreement" />I agree to receive
                 communications from AIESEC MEDINA
               </label>
@@ -107,7 +107,7 @@ function PartnershipPage() {
           </form>
           <div className="partners-section">
             <p className="title">Companies that already work with us:</p>
-            <div className="partner-slider">
+            <div className="partners">
               <img src={Partner} alt="partner" />
               <img src={Partner} alt="partner" />
               <img src={Partner} alt="partner" />
