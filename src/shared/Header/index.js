@@ -49,7 +49,7 @@ function Header() {
               </Link>
             </li>
             <li className="list-item">
-              <Link className="link" to="/about-us">
+              <Link className="link" to="/About-us/">
                 About us
               </Link>
               <ul className="collapse-list">
