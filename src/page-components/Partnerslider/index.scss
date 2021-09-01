@@ -1,9 +1,25 @@
-@keyframes sliding {
+@keyframes sliding1 {
   0% {
     margin-left: 0px;
   }
   100% {
     margin-left: -1532px;
+  }
+}
+@keyframes sliding2 {
+  0% {
+    margin-left: 100px;
+  }
+  100% {
+    margin-left: -1432px;
+  }
+}
+@keyframes sliding3 {
+  0% {
+    margin-left: -100px;
+  }
+  100% {
+    margin-left: -1632px;
   }
 }
 
@@ -39,17 +55,17 @@
     }
     div:nth-child(1) {
       img:first-child {
-        animation: sliding 32s infinite linear;
+        animation: sliding1 32s infinite linear;
       }
     }
     div:nth-child(2) {
       img:first-child {
-        animation: sliding 32s infinite 2s linear;
+        animation: sliding2 32s infinite linear;
       }
     }
     div:nth-child(3) {
       img:first-child {
-        animation: sliding 32s infinite 4s linear;
+        animation: sliding3 32s infinite linear;
       }
     }
   }
