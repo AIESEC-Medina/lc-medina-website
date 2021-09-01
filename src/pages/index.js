@@ -12,11 +12,8 @@ import { Container } from 'react-grid-system';
 import Layout from '../shared/Layout';
 import Seo from '../shared/Seo';
 
-// Local page components
-// @TODO Import local components here
-
 /* -------------------------------------------------------------------------- */
-/*                                    Page                                    */
+/*                              Index Page                                    */
 /* -------------------------------------------------------------------------- */
 
 function IndexPage() {

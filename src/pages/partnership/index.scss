@@ -1,0 +1,158 @@
+#main {
+  display: flex;
+  flex-direction: row;
+  color: #495057;
+  font-family: Lato;
+  background-size: 567px 1080px;
+  #language {
+    position: absolute;
+    top: 57px;
+    right: 4rem;
+    cursor: pointer;
+  }
+  .side-image {
+    position: fixed;
+    background: url(../../assets/images/azza.png);
+    width: 52vh;
+    height: 100vh;
+    background-size: cover;
+    z-index: 1;
+    left: 0;
+    img[alt="logo"] {
+      left: 58px;
+      top: 42px;
+      width: 80px;
+      z-index: 2;
+      position: fixed;
+    }
+    img[alt="partner"] {
+      width: 567px;
+      height: 1080px;
+      z-index: 0;
+      position: fixed;
+    }
+    .gradient {
+      position: fixed;
+      width: 52vh;
+      height: 100vh;
+      background-size: cover;
+      z-index: 1;
+      left: 0;
+      background: linear-gradient(180deg, #ffffff4f 0%, #000000e6 100%);
+      z-index: 1;
+    }
+    #textoverlay {
+      position: absolute;
+      z-index: 2;
+      font-weight: 200;
+      color: white;
+      bottom: 30px;
+      border-left: 8px solid #ffc845;
+      padding-left: 10px;
+      margin: 0 40px;
+      font-size: 15px;
+      span {
+        margin-top: 0;
+        font-family: Lato;
+      }
+      p {
+        padding-top: 20px;
+        margin-bottom: 0;
+        font-family: Lato-Light;
+      }
+    }
+  }
+  #formsection {
+    margin-top: 5rem;
+    margin-left: 60vh;
+    padding-right: 0;
+    font-weight: 900;
+    font-size: 20px;
+    width: 652px;
+    text-align: left;
+    position: relative;
+    .inputs {
+      display: flex;
+      justify-content: space-between;
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      input[type="url"] {
+        padding: 12px;
+        width: 446px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      textarea {
+        width: 470px;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+      }
+    }
+    .submit-btn {
+      text-align: right;
+      button {
+        background: var(--unnamed-color-037ef3) 0% 0% no-repeat padding-box;
+        background: #037ef3 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        opacity: 1;
+        border: none;
+        font-size: 18px;
+        color: #f8f9fa;
+        margin-top: 50px;
+        padding: 0.75rem 1.5rem;
+        cursor: pointer;
+      }
+    }
+    #lastchild {
+      margin-top: 60px;
+    }
+    .formgroup {
+      margin-top: 40px;
+      label {
+        font-size: 18px;
+      }
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        input {
+          margin-right: 10px;
+        }
+      }
+    }
+    p {
+      margin-top: 62px;
+      margin-bottom: 50px;
+      font-size: 34px;
+      font-weight: 900;
+    }
+  }
+  .partners-section {
+    .title {
+      font-size: 24px !important;
+    }
+    .partner-slider {
+      display: flex;
+      width: 100%;
+      img {
+        justify-content: space-evenly;
+        width: 12rem;
+        margin-right: 100px;
+        margin-bottom: 78px;
+      }
+    }
+  }
+}

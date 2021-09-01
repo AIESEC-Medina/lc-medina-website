@@ -1,55 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-* {
-  margin: 0;
-  padding: 0;
+.active-navbar {
+  background-color: white;
+  box-shadow: 0px 0px 6px #0000001a;
 }
-#navbar {
+.navbar {
   font-family: lato;
   color: #707070;
-  margin: 0;
-  padding: 0;
   display: flex;
-  vertical-align: middle;
-  background-color: #f8f9fa;
-  max-height: 119px;
-  img[alt='logo'] {
-    width: 110px;
-    height: 76px;
-    margin-left: 130px;
-    margin-top: 21px;
-    margin-bottom: 21px;
-    cursor: pointer;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 0.1s ease-in-out;
+  .logo {
+    width: 70px;
   }
-  img[alt='change language'] {
-    position: absolute;
-    right: -50px;
-    cursor: pointer;
+  .translation-img {
+    margin-left: 40px;
+    width: 18px;
   }
-  div {
-    position: relative;
+  .nav-content {
     text-align: center;
-    margin-right: 129px;
-    margin-left: auto;
     display: flex;
     white-space: nowrap;
-    ul {
-      position: absolute;
+    align-items: center;
+    .list {
       list-style: none;
-      padding-left: 0 !important;
-      right: 0;
-      top: 40px;
-    }
-    li {
-      display: inline;
-    }
-    a {
-      margin-left: 40px;
-      cursor: pointer;
-      padding-bottom: 3px;
-      transition: all 0.2s ease-in-out;
-    }
-    a:hover {
-      border-bottom: 3px solid #037ef3;
+      display: flex;
+      align-items: center;
+      .list-item {
+        position: relative;
+        &:hover {
+          .collapse-list {
+            visibility: visible;
+          }
+        }
+        .link {
+          margin-left: 40px;
+          cursor: pointer;
+          padding-bottom: 3px;
+          text-decoration: none;
+          color: #707070;
+          transition: 0.2s ease-in-out;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0%;
+            width: 0%;
+            height: 1.5px;
+            background-color: #037ef3;
+            transition: all 0.15s linear;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+          &:hover,
+          &:active {
+            color: #000;
+          }
+        }
+        .collapse-list {
+          transition: 0.05s ease-in-out;
+          visibility: hidden;
+          position: absolute;
+          margin-top: 0.75rem !important;
+          left: 2rem;
+          background-color: white;
+          box-shadow: 0px 0px 6px #0000001a;
+          border-radius: 2px;
+          list-style: none;
+          border-radius: 4px;
+          .collapse-item {
+            padding: 10px 20px 10px 14px;
+            text-align: left;
+            &:hover {
+              background: #0000000d;
+              a {
+                color: black;
+              }
+            }
+            a {
+              color: #707070;
+              text-decoration: none;
+              width: 100%;
+              display: flex;
+            }
+          }
+        }
+      }
     }
   }
 }

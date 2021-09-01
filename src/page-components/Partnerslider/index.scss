@@ -1,0 +1,56 @@
+@keyframes sliding {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1532px;
+  }
+}
+
+#slider-main {
+  font-family: lato;
+  padding: 0;
+  text-align: center;
+  p {
+    color: #adb5bd;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 918px;
+  }
+  h2 {
+    color: #495057;
+  }
+  #slider {
+    position: relative;
+    max-width: 1532px;
+    max-height: 282px;
+    left: 140px;
+    overflow: hidden;
+    div {
+      display: flex;
+      margin-bottom: 60px;
+    }
+    img {
+      margin-left: 100px;
+      width: 283px;
+      height: 54px;
+    }
+    div:nth-child(1) {
+      img:first-child {
+        animation: sliding 32s infinite linear;
+      }
+    }
+    div:nth-child(2) {
+      img:first-child {
+        animation: sliding 32s infinite 2s linear;
+      }
+    }
+    div:nth-child(3) {
+      img:first-child {
+        animation: sliding 32s infinite 4s linear;
+      }
+    }
+  }
+}
