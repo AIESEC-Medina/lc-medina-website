@@ -1,19 +1,21 @@
 @keyframes sliding1 {
   0% {
-    margin-left: 0px;
+    margin-left: 100px;
   }
   100% {
     margin-left: -1532px;
   }
 }
+
 @keyframes sliding2 {
   0% {
-    margin-left: 100px;
+    margin-left: 0px;
   }
   100% {
     margin-left: -1432px;
   }
 }
+
 @keyframes sliding3 {
   0% {
     margin-left: -100px;
