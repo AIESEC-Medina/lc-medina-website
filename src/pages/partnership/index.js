@@ -4,6 +4,7 @@
 
 // Packages
 import React from 'react';
+import { Link } from 'gatsby';
 
 // Page wrappers
 import Seo from '../../shared/Seo';
@@ -21,13 +22,18 @@ import './index.scss';
 /* -------------------------------------------------------------------------- */
 
 function PartnershipPage() {
+  function onSubmitForm(e) {
+    e.preventDefault();
+  }
   return (
     <>
       <Seo title="Partnership" />
       <div id="partnership-page">
         <img src={Globe} alt="change language" className="change-language" />
         <div id="side-image">
-          <img className="side-logo" src={Logo} alt="logo" />
+          <Link to="/">
+            <img className="side-logo" src={Logo} alt="logo" />
+          </Link>
           <div className="gradient" />
           <div className="sidetext">
             <span>
@@ -52,53 +58,83 @@ function PartnershipPage() {
         </div>
         <div id="formsection">
           <h1>Sign up for more information</h1>
-          <form>
+          <form onSubmit={onSubmitForm}>
             <div className="formgroup">
               <label htmlFor="fullname" className="labels">
                 Full name &nbsp;
-                <input id="fullname" className="inputs" type="text" />
+                <input
+                  id="fullname"
+                  className="inputs"
+                  type="text"
+                  aria-required
+                />
               </label>
             </div>
             <div className="formgroup">
               <label htmlFor="email" className="labels">
                 Email &nbsp;
-                <input id="email" className="inputs" type="email" />
+                <input
+                  id="email"
+                  className="inputs"
+                  type="email"
+                  aria-required
+                />
               </label>
             </div>
             <div className="formgroup">
               <label htmlFor="telephone" className="labels">
                 Telephone &nbsp;
-                <input id="telephone" className="inputs" type="tel" />
+                <input
+                  id="telephone"
+                  className="inputs"
+                  type="tel"
+                  aria-required
+                />
               </label>
             </div>
             <div className="formgroup">
               <label htmlFor="company" className="labels">
                 Company &nbsp;
-                <input id="company" className="inputs" type="text" />
+                <input
+                  id="company"
+                  className="inputs"
+                  type="text"
+                  aria-required
+                />
               </label>
             </div>
             <div className="formgroup">
               <label htmlFor="location" className="labels">
                 Location &nbsp;
-                <input id="location" className="inputs" type="text" />
+                <input
+                  id="location"
+                  className="inputs"
+                  type="text"
+                  aria-required
+                />
               </label>
             </div>
             <div className="formgroup">
               <label htmlFor="website" className="labels">
                 Website &nbsp;
-                <input id="website" className="inputs" type="url" />
+                <input
+                  id="website"
+                  className="inputs"
+                  type="url"
+                  aria-required
+                />
               </label>
             </div>
             <div className="formgroup">
               <label htmlFor="message" className="labels">
                 Message &nbsp;
-                <textarea id="message" />
+                <textarea id="message" aria-required />
               </label>
             </div>
             <div className="formgroup">
               <label htmlFor="agreement" className="agreelabel">
-                <input type="checkbox" id="agreement" />I agree to receive
-                communications from AIESEC MEDINA
+                <input type="checkbox" id="agreement" aria-required />I agree to
+                receive communications from AIESEC MEDINA
               </label>
             </div>
             <div className="submit-btn">
