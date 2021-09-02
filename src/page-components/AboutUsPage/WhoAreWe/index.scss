@@ -2,14 +2,12 @@
   position: relative;
   margin-top: 6rem;
   @keyframes image-sliding {
-    0% {
+    0%,
+    100% {
       top: 0;
     }
     50% {
-      top: 3rem;
-    }
-    100% {
-      top: 0;
+      top: 3.5rem;
     }
   }
 
@@ -28,9 +26,9 @@
     position: relative;
     width: 20rem;
     z-index: 1;
+    top: 0;
     cursor: pointer;
     animation: image-sliding 10s infinite ease-in-out;
-    transition: 0.1s ease-in-out;
     transform: scale(1);
     &:hover {
       transform: scale(1.02);
