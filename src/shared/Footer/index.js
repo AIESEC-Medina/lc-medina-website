@@ -101,9 +101,27 @@ function Footer() {
         <span />
         <div className="right-side flex items-center">
           <div className="social-networks flex items-center">
-            <img src={FACEBOOK_ICON} alt="facebook-icon" />
-            <img src={INSTAGRAM_ICON} alt="instagram-icon" />
-            <img src={YOUTUBE_ICON} alt="youtube-icon" />
+            <a
+              href="https://www.facebook.com/AIESECinTunisia5"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={FACEBOOK_ICON} alt="facebook-icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/eb.wonkru/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={INSTAGRAM_ICON} alt="instagram-icon" />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCTd36uIqqxRr8O23PWlgOpQ"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={YOUTUBE_ICON} alt="youtube-icon" />
+            </a>
           </div>
           <span className="dot">•</span>
           <div className="languages flex items-center">

@@ -19,6 +19,10 @@ body {
   padding: 0;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .fluid {
   margin-left: 0 !important;
   margin-right: 0 !important;

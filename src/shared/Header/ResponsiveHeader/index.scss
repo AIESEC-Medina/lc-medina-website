@@ -6,9 +6,9 @@
   justify-content: space-between;
   padding: 20px 0;
   position: fixed;
+  z-index: 10;
   top: 0;
   width: 100%;
-  z-index: 1;
   transition: 0.1s ease-in-out;
   .logo {
     width: 70px;
