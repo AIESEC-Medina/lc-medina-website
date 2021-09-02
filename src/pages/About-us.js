@@ -11,6 +11,7 @@ import Seo from '../shared/Seo/index';
 import TopSection from '../page-components/AboutUsPage/TopSection';
 import WhoAreWe from '../page-components/AboutUsPage/WhoAreWe';
 import Ourstory from '../page-components/AboutUsPage/OurStory';
+import DepartmentsSlider from '../page-components/AboutUsPage/DepartmentsSlider';
 import PartnerSlider from '../page-components/Partnerslider';
 
 /* -------------------------------------------------------------------------- */
@@ -25,6 +26,7 @@ function AboutUs() {
         <TopSection />
         <WhoAreWe />
         <Ourstory />
+        <DepartmentsSlider />
         <PartnerSlider />
       </Layout>
     </>

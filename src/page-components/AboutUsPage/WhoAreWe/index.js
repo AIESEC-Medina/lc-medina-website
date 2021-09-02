@@ -22,7 +22,7 @@ function WhoAreWe() {
   /* ******************************** RENDERING ******************************* */
   return (
     <div className="who-are-we">
-      <div className="section-1">
+      <div className="section-1" data-aos="fade-right">
         <div className="left-side">
           <img className="aiesec-img" src={AIESEC_IMG} alt="" />
           <img className="alq-img" src={ALQ_IMG} alt="" />
@@ -58,7 +58,7 @@ function WhoAreWe() {
           </div>
         </div>
       </div>
-      <div className="section-2">
+      <div className="section-2" data-aos="fade-left">
         <div className="left-side">
           <p className="what-we-do">What is AIESEC MEDINA?</p>
           <p className="description">

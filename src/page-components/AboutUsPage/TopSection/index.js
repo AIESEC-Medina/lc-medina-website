@@ -16,7 +16,12 @@ import './index.scss';
 /* -------------------------------------------------------------------------- */
 function TopSection() {
   return (
-    <div className="TopSection-container">
+    <div
+      className="TopSection-container"
+      data-sal="fade"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+    >
       <div className="Informations-container">
         <img src={Logo} alt="MedinaLogo" />
         <div className="intro-info">

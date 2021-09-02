@@ -26,7 +26,7 @@
 }
 
 #slider-main {
-  margin-top: 3rem;
+  margin-top: 5rem;
   padding: 0;
   text-align: center;
   p {
@@ -35,10 +35,13 @@
     margin-bottom: 70px;
     margin-left: auto;
     margin-right: auto;
-    width: 918px;
+    font-size: 18px;
+    width: 50%;
   }
   h2 {
+    font-family: Raleway-SemiBold;
     color: #495057;
+    font-size: 40px;
   }
   #slider {
     position: relative;
