@@ -1,0 +1,82 @@
+.profileContainer {
+  transform: scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+  position: relative;
+  height: 363px;
+  margin-left: 3ch;
+  margin-top: 3ch;
+  border-radius: 8px;
+  opacity: 1;
+  background-position: center;
+  .linearGradientDiv {
+    position: absolute;
+    width: 363px;
+    height: 363px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        135deg,
+        #00c16e4d 0%,
+        #00c16e26 48%,
+        #45c1bd4d 100%
+      )
+      0% 0% no-repeat padding-box;
+    border-radius: 8px;
+  }
+
+  .profilePic {
+    // position: absolute;
+    width: 363px;
+    height: 363px;
+    border-radius: 8px;
+  }
+  .contentContainer {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    .profileName {
+      font-size: 1.6em;
+      font-family: 'Lato';
+      font-weight: 700;
+      color: #f8f9fa;
+    }
+    .profilePost {
+      font-size: 1.2em;
+      font-family: 'Lato';
+      font-weight: 700;
+      color: #afafaf;
+      margin: 1ch 0 0.5ch 0;
+    }
+    .linkContainer a {
+      margin-right: 1ch;
+    }
+    .fbIcon img {
+      border-radius: 50%;
+    }
+    .linkContainer {
+      margin-top: 8px;
+    }
+  }
+  &:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    .linearGradientDiv {
+      background: linear-gradient(
+          135deg,
+          #00c16d62 0%,
+          #00c16d41 48%,
+          #45c1bd63 100%
+        )
+        0% 0% no-repeat padding-box;
+    }
+    .contentContainer {
+      .profileName,
+      .profilePost {
+        color: #fff;
+      }
+    }
+    .socialMediaLink {
+      filter: brightness(200%);
+    }
+  }
+}
