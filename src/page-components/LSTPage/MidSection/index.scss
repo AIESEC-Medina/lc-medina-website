@@ -2,13 +2,14 @@
   display: flex;
   flex-direction: column;
   padding-top: 6.3rem;
-  background: url('../../../assets/images/backgroundTopsection.svg') top
-    no-repeat;
+  background: url("../../../assets/images/backgroundTopsection.svg") top no-repeat;
 
   .subContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-flow: wrap;
+    align-items: center;
   }
   .subcontainer:first-child {
     padding: 20%;
