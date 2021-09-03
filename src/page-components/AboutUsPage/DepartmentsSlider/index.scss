@@ -4,7 +4,7 @@
 .departments-slider {
   margin-top: 15rem;
   background-color: #fa915c;
-  height: 70vh;
+  padding: 3rem 0;
   .heading {
     font-family: Raleway-SemiBold;
     color: #f8f9fa;
@@ -75,6 +75,7 @@
 
   .slick-slider {
     padding-top: 10vh;
+    cursor: pointer;
     .slick-next {
       right: 3rem !important;
       z-index: 2;
@@ -91,8 +92,8 @@
     display: flex;
     align-items: center;
     text-align: center;
-    padding-bottom: 5rem;
     margin-left: 2rem;
+    margin-bottom: 2rem;
     .single-slider {
       img {
         width: 400px;
@@ -107,14 +108,12 @@
 
   .slick-dots {
     list-style: none;
-    margin: 0;
     display: flex !important;
     align-items: center;
     justify-content: center;
-    margin-top: 60px !important;
     .dot-icon {
       margin: 0 9px;
-      background-color: #ffffff59;
+      background-color: rgba(255, 255, 255, 0.7);
       width: 6px;
       height: 6px;
       border-radius: 50%;
