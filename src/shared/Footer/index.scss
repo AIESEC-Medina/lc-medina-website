@@ -3,7 +3,6 @@
   background-color: #00000005;
   padding: 60px 0px;
   position: relative;
-  z-index: 10;
   .top-section {
     width: 100%;
     justify-content: space-around;
@@ -21,6 +20,7 @@
       .list-item a,
       .medina-description {
         font-size: 14px;
+        line-height: 20px;
         color: #707070;
       }
       .list {
