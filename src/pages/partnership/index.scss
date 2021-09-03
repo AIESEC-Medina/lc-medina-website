@@ -1,16 +1,16 @@
-#main {
+#partnership-page {
   display: flex;
   flex-direction: row;
   color: #495057;
   font-family: Lato;
   background-size: 567px 1080px;
-  #language {
+  .change-language {
     position: absolute;
     top: 57px;
     right: 4rem;
     cursor: pointer;
   }
-  .side-image {
+  #side-image {
     position: fixed;
     background: url(../../assets/images/azza.png);
     width: 52vh;
@@ -18,17 +18,11 @@
     background-size: cover;
     z-index: 1;
     left: 0;
-    img[alt="logo"] {
+    .side-logo {
       left: 58px;
       top: 42px;
       width: 80px;
       z-index: 2;
-      position: fixed;
-    }
-    img[alt="partner"] {
-      width: 567px;
-      height: 1080px;
-      z-index: 0;
       position: fixed;
     }
     .gradient {
@@ -41,7 +35,7 @@
       background: linear-gradient(180deg, #ffffff4f 0%, #000000e6 100%);
       z-index: 1;
     }
-    #textoverlay {
+    .sidetext {
       position: absolute;
       z-index: 2;
       font-weight: 200;
@@ -63,6 +57,7 @@
     }
   }
   #formsection {
+    width: 100%;
     margin-top: 5rem;
     margin-left: 60vh;
     padding-right: 0;
@@ -71,29 +66,37 @@
     width: 652px;
     text-align: left;
     position: relative;
-    .inputs {
-      display: flex;
-      justify-content: space-between;
-      input[type="text"],
-      input[type="tel"],
-      input[type="email"],
-      input[type="url"] {
-        padding: 12px;
-        width: 446px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
+    .formgroup {
+      margin-top: 40px;
+      .labels {
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        .inputs {
+          padding: 12px;
+          width: 446px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+        }
+        textarea {
+          width: 482px;
+          height: 150px;
+          padding: 12px 15px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: none;
+          margin-left: 6.5rem;
+        }
       }
-
-      textarea {
-        width: 470px;
-        height: 150px;
-        padding: 12px 20px;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        background-color: #f8f8f8;
-        resize: none;
+      .agreelabel {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        input {
+          margin-right: 10px;
+        }
       }
     }
     .submit-btn {
@@ -111,40 +114,15 @@
         cursor: pointer;
       }
     }
-    #lastchild {
-      margin-top: 60px;
-    }
-    .formgroup {
-      margin-top: 40px;
-      label {
-        font-size: 18px;
-      }
-    }
-    form {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      label {
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        input {
-          margin-right: 10px;
-        }
-      }
-    }
-    p {
-      margin-top: 62px;
-      margin-bottom: 50px;
-      font-size: 34px;
-      font-weight: 900;
-    }
   }
   .partners-section {
     .title {
-      font-size: 24px !important;
+      font-size: 24px;
+      margin-top: 62px;
+      margin-bottom: 50px;
+      font-weight: 900;
     }
-    .partner-slider {
+    .partners {
       display: flex;
       width: 100%;
       img {

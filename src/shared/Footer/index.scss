@@ -2,6 +2,8 @@
   margin-top: 5rem;
   background-color: #00000005;
   padding: 60px 0px;
+  position: relative;
+  z-index: 10;
   .top-section {
     width: 100%;
     justify-content: space-around;
@@ -44,7 +46,7 @@
     .right-side {
       .social-networks {
         img {
-          margin: 0 20px;
+          margin: 0 14px;
           cursor: pointer;
           opacity: 0.85;
           &:hover {

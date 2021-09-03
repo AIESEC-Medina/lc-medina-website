@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'LC Medina',
+    title: 'AIESEC in Manouba',
     description:
       'We are a youth leadership movement AIESEC is a global platform for young people to develop their leadership...',
     author: 'Local Support Team',
@@ -29,8 +29,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'lc-medina-website',
-        short_name: 'LC MEDINA Website',
+        name: 'aiesec-in-manouba-website',
+        short_name: 'AIESEC In Manouba Website',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#fff',

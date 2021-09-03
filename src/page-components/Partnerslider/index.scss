@@ -1,32 +1,52 @@
-@keyframes sliding {
+@keyframes sliding1 {
   0% {
-    margin-left: 0px;
+    margin-left: 100px;
   }
   100% {
     margin-left: -1532px;
   }
 }
 
+@keyframes sliding2 {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1432px;
+  }
+}
+
+@keyframes sliding3 {
+  0% {
+    margin-left: -100px;
+  }
+  100% {
+    margin-left: -1632px;
+  }
+}
+
 #slider-main {
-  font-family: lato;
+  margin-top: 5rem;
   padding: 0;
   text-align: center;
   p {
     color: #adb5bd;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 70px;
     margin-left: auto;
     margin-right: auto;
-    width: 918px;
+    font-size: 18px;
+    width: 50%;
   }
   h2 {
+    font-family: Raleway-SemiBold;
     color: #495057;
+    font-size: 40px;
   }
   #slider {
     position: relative;
-    max-width: 1532px;
     max-height: 282px;
-    left: 140px;
+    left: 0px;
     overflow: hidden;
     div {
       display: flex;
@@ -39,17 +59,17 @@
     }
     div:nth-child(1) {
       img:first-child {
-        animation: sliding 32s infinite linear;
+        animation: sliding1 32s infinite linear;
       }
     }
     div:nth-child(2) {
       img:first-child {
-        animation: sliding 32s infinite 2s linear;
+        animation: sliding2 32s infinite linear;
       }
     }
     div:nth-child(3) {
       img:first-child {
-        animation: sliding 32s infinite 4s linear;
+        animation: sliding3 32s infinite linear;
       }
     }
   }
