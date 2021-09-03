@@ -86,8 +86,8 @@ function WhoAreWe() {
           </div>
         </div>
         <div className="right-side">
-          <img className="aiesec-img" src={MEDINA_IMG} alt="" />
-          <img className="alq-img" src={LC_MEDINA_IMG} alt="" />
+          <img className="medina-img" src={LC_MEDINA_IMG} alt="" />
+          <img className="medina_1-img" src={MEDINA_IMG} alt="" />
         </div>
       </div>
       <img className="wave-img" src={WAVE_IMG} alt="" />

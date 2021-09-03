@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .boxedText {
+    background-color: #e9ecef;
+    width: 17ch;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 2ch;
+    color: #495057;
+    padding-bottom: 0.25ch;
+  }
+  .ourTeam {
+    font-size: 3.5em;
+    color: #00c16e;
+  }
+  .meetUs {
+    color: #adb5bd;
+    font-size: 1.5em;
+    margin-top: 1ch;
+  }
+}

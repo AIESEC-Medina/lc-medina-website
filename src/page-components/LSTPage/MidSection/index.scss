@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6.3rem;
+  background: url('../../../assets/images/backgroundTopsection.svg') top
+    no-repeat;
+
+  .subContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .subcontainer:first-child {
+    padding: 20%;
+  }
+  .textContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10ch;
+  }
+}
