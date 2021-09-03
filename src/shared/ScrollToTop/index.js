@@ -3,34 +3,27 @@
 /* -------------------------------------------------------------------------- */
 
 // Packages
+// import { Link } from 'gatsby';
 import React from 'react';
-import PropTypes from 'prop-types';
 
-// Page wrappers
-import Header from '../Header';
-import Footer from '../Footer';
-import ScrollToTop from '../ScrollToTop';
+// Local images
+import arrowUPIcon from '../../assets/icons/arrow-up.svg';
 
 // Style
 import './index.scss';
 
 /* -------------------------------------------------------------------------- */
-/*                           Layout Component                                 */
+/*                           ScrollToTop Component                                 */
 /* -------------------------------------------------------------------------- */
-const Layout = ({ children }) => {
+function ScrollToTop() {
+    
+  
   /* ******************************** RENDERING ******************************* */
   return (
-    <>
-      <Header />
-      <main>{children}</main>
-      <ScrollToTop />
-      <Footer />
-    </>
+    <div className="container">    
+      <a href="#top">ㅤ</a>
+    </div>
   );
-};
+}
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-export default Layout;
+export default ScrollToTop;
