@@ -13,12 +13,18 @@
   .logo {
     width: 70px;
     padding-left: 25px;
+    @media (max-width: 900px) {
+      width: 50px;
+    }
   }
   .menu {
     line-height: 0;
     .menu-icon {
       margin-right: 25px;
       width: 2rem;
+      @media (max-width: 900px) {
+        width: 1.5rem;
+      }
     }
   }
   .translation-img {
