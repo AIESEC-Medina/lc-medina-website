@@ -13,4 +13,16 @@
       margin-bottom: 25px;
     }
   }
+  .opps-container {
+    max-width: 1140px;
+    .embed-container {
+      margin: 0 2ch;
+      iframe {
+        width: 500px;
+        @media (max-width: 900px) {
+          width: 200px;
+        }
+      }
+    }
+  }
 }
