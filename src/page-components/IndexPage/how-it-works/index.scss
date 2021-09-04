@@ -44,7 +44,6 @@
         .description {
           font-size: 14px;
           line-height: 22px;
-          width: 50%;
           text-align: center;
         }
       }
@@ -77,6 +76,10 @@
           font-size: 14px;
           line-height: 22px;
           text-align: center;
+          @media (max-width: 900px) {
+            width: 80%;
+            margin: 0 auto;
+          }
         }
       }
     }

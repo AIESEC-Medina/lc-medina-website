@@ -9,7 +9,8 @@
     width: 100%;
     animation: changeBg 20s infinite ease-in-out;
     @keyframes changeBg {
-      0% {
+      0%,
+      100% {
         background-image: url("../../../assets/images/landing-bg.jpg");
       }
       25% {
@@ -20,9 +21,6 @@
       }
       75% {
         background-image: url("../../../assets/images/landing-bg_3.jpg");
-      }
-      100% {
-        background-image: url("../../../assets/images/landing-bg.jpg");
       }
     }
     .content {
@@ -57,7 +55,7 @@
         }
         font-size: 3.75rem;
         font-family: Raleway-Bold;
-        width: 80%;
+        width: 70%;
         color: white;
         margin-bottom: 2rem;
       }
