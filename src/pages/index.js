@@ -5,12 +5,16 @@
 // Packages
 import React from 'react';
 
-// UI lib components
-import { Container } from 'react-grid-system';
-
 // Page wrappers
 import Layout from '../shared/Layout';
 import Seo from '../shared/Seo';
+
+// local UI Component
+import TopSection from '../page-components/IndexPage/top-section';
+import ProductsSection from '../page-components/IndexPage/products';
+import HowItWorksSection from '../page-components/IndexPage/how-it-works';
+import AIESECOpportunities from '../page-components/IndexPage/aiesec-opportunities';
+import LST from '../page-components/LSTPage';
 
 /* -------------------------------------------------------------------------- */
 /*                              Index Page                                    */
@@ -18,11 +22,13 @@ import Seo from '../shared/Seo';
 
 function IndexPage() {
   return (
-    <Layout>
+    <Layout whiteLink>
       <Seo title="Home" />
-      <Container>
-        <p>hey from main!</p>
-      </Container>
+      <TopSection />
+      <ProductsSection />
+      <HowItWorksSection />
+      <AIESECOpportunities />
+      <LST />
     </Layout>
   );
 }

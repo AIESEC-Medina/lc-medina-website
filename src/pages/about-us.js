@@ -23,11 +23,13 @@ function AboutUs() {
     <>
       <Seo title="About us" />
       <Layout>
-        <TopSection />
-        <WhoAreWe />
-        <Ourstory />
-        <DepartmentsSlider />
-        <PartnerSlider />
+        <div className="about-us-page">
+          <TopSection />
+          <WhoAreWe />
+          <Ourstory />
+          <DepartmentsSlider />
+          <PartnerSlider />
+        </div>
       </Layout>
     </>
   );

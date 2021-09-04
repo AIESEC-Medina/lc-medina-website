@@ -19,7 +19,7 @@ import './index.scss';
 /* -------------------------------------------------------------------------- */
 /*                           Layout Component                                 */
 /* -------------------------------------------------------------------------- */
-const Layout = ({ children }) => {
+const Layout = ({ children, whiteLink }) => {
   /* ********************************** HOOKS ********************************* */
   const [scrollY, setPageScrolling] = useState(0);
   const IS_BROWSER = typeof window !== 'undefined';
@@ -55,7 +55,7 @@ const Layout = ({ children }) => {
   /* ******************************** RENDERING ******************************* */
   return (
     <div className="page-layout">
-      <Header />
+      <Header whiteLink={whiteLink} />
       {getBackToTopBtn()}
       <main>{children}</main>
       <Footer />
@@ -65,6 +65,11 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  whiteLink: PropTypes.bool,
+};
+
+Layout.defaultProps = {
+  whiteLink: false,
 };
 
 export default Layout;

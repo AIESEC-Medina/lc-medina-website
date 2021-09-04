@@ -87,7 +87,7 @@ function LST() {
 
   /* ******************************** RENDERING ******************************* */
   return (
-    <div className="container">
+    <div className="lst-page">
       <div className="textContainer">
         <div className="knowUs">
           <WannaKnowUs />

@@ -4,12 +4,14 @@
 
 // Packages
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 // import { Link } from 'gatsby';
 
 // Local images
 import Logo from '../../../assets/medina-logo.png';
 import MENU_ICON from '../../../assets/icons/menu-icon.svg';
+import WHITE_MENU_ICON from '../../../assets/icons/menu-white.svg';
 
 // Style
 import './index.scss';
@@ -17,7 +19,7 @@ import './index.scss';
 /* -------------------------------------------------------------------------- */
 /*                         Responsive Header Component                        */
 /* -------------------------------------------------------------------------- */
-function ResponsiveHeader() {
+function ResponsiveHeader({ whiteLink }) {
   /* ******************************** HOOKS ******************************* */
   const [isScrolled, setPageScrolling] = useState(false);
   const IS_BROWSER = typeof window !== 'undefined';
@@ -38,7 +40,18 @@ function ResponsiveHeader() {
   return (
     <header className={`responsive-navbar ${isScrolled && 'active-navbar'}`}>
       <img className="logo" src={Logo} alt="logo" />
-      <img className="menu-icon" src={MENU_ICON} alt="logo" />
+      <div className="menu">
+        {!isScrolled && whiteLink && (
+          <img
+            className="menu-icon"
+            src={WHITE_MENU_ICON}
+            alt="change language"
+          />
+        )}
+        {(isScrolled || !whiteLink) && (
+          <img className="menu-icon" src={MENU_ICON} alt="change language" />
+        )}
+      </div>
       {/* <nav className="nav-content">
         <ul className="list">
           <li className="list-item">
@@ -122,5 +135,13 @@ function ResponsiveHeader() {
     </header>
   );
 }
+
+ResponsiveHeader.defaultProps = {
+  whiteLink: false,
+};
+
+ResponsiveHeader.propTypes = {
+  whiteLink: PropTypes.bool,
+};
 
 export default ResponsiveHeader;

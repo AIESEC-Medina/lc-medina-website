@@ -4,6 +4,8 @@
 
 // Packages
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+
 import { Hidden } from 'react-grid-system';
 
 import { Link } from 'gatsby';
@@ -13,6 +15,7 @@ import ResponsiveHeader from './ResponsiveHeader';
 // Local images
 import Logo from '../../assets/medina-logo.png';
 import Globe from '../../assets/icons/earth-icon.svg';
+import GLOBE_WHITE from '../../assets/icons/white-earth-icon.svg';
 
 // Style
 import './index.scss';
@@ -20,7 +23,7 @@ import './index.scss';
 /* -------------------------------------------------------------------------- */
 /*                           Header Component                                 */
 /* -------------------------------------------------------------------------- */
-function Header() {
+function Header({ whiteLink }) {
   /* ******************************** HOOKS ******************************* */
   const [isScrolled, setPageScrolling] = useState(false);
   const IS_BROWSER = typeof window !== 'undefined';
@@ -44,12 +47,18 @@ function Header() {
         <nav className="nav-content">
           <ul className="list">
             <li className="list-item">
-              <Link className="link" to="/">
+              <Link
+                className={`link ${!isScrolled && whiteLink && 'white-link'}`}
+                to="/"
+              >
                 Home
               </Link>
             </li>
             <li className="list-item">
-              <Link className="link" to="/about-us">
+              <Link
+                className={`link ${!isScrolled && whiteLink && 'white-link'}`}
+                to="/about-us"
+              >
                 About us
               </Link>
               <ul className="collapse-list">
@@ -71,7 +80,10 @@ function Header() {
               </ul>
             </li>
             <li className="list-item">
-              <Link className="link" to="/">
+              <Link
+                className={`link ${!isScrolled && whiteLink && 'white-link'}`}
+                to="/"
+              >
                 Our products
               </Link>
               <ul className="collapse-list">
@@ -93,7 +105,10 @@ function Header() {
               </ul>
             </li>
             <li className="list-item">
-              <Link className="link" to="/">
+              <Link
+                className={`link ${!isScrolled && whiteLink && 'white-link'}`}
+                to="/"
+              >
                 Our blog
               </Link>
               <ul className="collapse-list">
@@ -110,23 +125,44 @@ function Header() {
               </ul>
             </li>
             <li className="list-item">
-              <Link className="link" to="/">
+              <Link
+                className={`link ${!isScrolled && whiteLink && 'white-link'}`}
+                to="/"
+              >
                 Global Home
               </Link>
             </li>
             <li className="list-item">
-              <Link className="link" to="/partnership">
+              <Link
+                className={`link ${!isScrolled && whiteLink && 'white-link'}`}
+                to="/partnership"
+              >
                 Partnership
               </Link>
             </li>
           </ul>
-          <img className="translation-img" src={Globe} alt="change language" />
+          <div className="translation">
+            {!isScrolled && whiteLink && (
+              <img
+                className="translation-img"
+                src={GLOBE_WHITE}
+                alt="change language"
+              />
+            )}
+            {(isScrolled || !whiteLink) && (
+              <img
+                className="translation-img"
+                src={Globe}
+                alt="change language"
+              />
+            )}
+          </div>
         </nav>
       </header>
     );
   }
   function getResponsiveHeader() {
-    return <ResponsiveHeader />;
+    return <ResponsiveHeader whiteLink={whiteLink} />;
   }
   /* ******************************** RENDERING ******************************* */
   return (
@@ -140,5 +176,13 @@ function Header() {
     </>
   );
 }
+
+Header.defaultProps = {
+  whiteLink: false,
+};
+
+Header.propTypes = {
+  whiteLink: PropTypes.bool,
+};
 
 export default Header;

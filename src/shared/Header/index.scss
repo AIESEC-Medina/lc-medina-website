@@ -17,9 +17,12 @@
   .logo {
     width: 70px;
   }
-  .translation-img {
-    margin-left: 40px;
-    width: 18px;
+  .translation {
+    line-height: 0;
+    .translation-img {
+      margin-left: 40px;
+      width: 18px;
+    }
   }
   .nav-content {
     text-align: center;
@@ -36,6 +39,9 @@
           .collapse-list {
             visibility: visible;
           }
+        }
+        .white-link {
+          color: white !important;
         }
         .link {
           margin-left: 40px;

@@ -38,6 +38,12 @@ module.exports = {
         icon: 'src/assets/logo.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-tawk',
+      options: {
+        tawkId: '5f6538ef4704467e89f04a58',
+      },
+    },
     'gatsby-plugin-gatsby-cloud',
     'gatsby-plugin-advanced-sitemap',
     'gatsby-plugin-offline',

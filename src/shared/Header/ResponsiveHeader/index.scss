@@ -14,8 +14,12 @@
     width: 70px;
     padding-left: 25px;
   }
-  .menu-icon {
-    margin-right: 25px;
+  .menu {
+    line-height: 0;
+    .menu-icon {
+      margin-right: 25px;
+      width: 2rem;
+    }
   }
   .translation-img {
     margin-left: 40px;

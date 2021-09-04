@@ -1,0 +1,16 @@
+.aiesec-opps-section {
+  margin-top: 4rem;
+  .heading {
+    font-size: 24px;
+    font-family: Raleway-SemiBold;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #495057;
+    width: 50%;
+    @media (max-width: 900px) {
+      width: 100%;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+  }
+}
