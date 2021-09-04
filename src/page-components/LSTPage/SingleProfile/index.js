@@ -7,9 +7,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Local images
-/* ------- import AIESEC_IMG from '../../../assets/images/AIESEC.png'; ------ */
-import fbImg from '../../../../assets/icons/facebook-icon.svg';
-import linkedinImg from '../../../../assets/icons/linkedin-icon.svg';
+import fbImg from '../../../assets/icons/facebook-icon.svg';
+import linkedinImg from '../../../assets/icons/linkedin-icon.svg';
 
 // Style
 import './index.scss';
@@ -18,12 +17,11 @@ import './index.scss';
 /*                             Who Are We Section                             */
 /* -------------------------------------------------------------------------- */
 function SingleProfile({ data }) {
-  //  { imgSRC , name , post , fbLink , linkedinLink }
   const { imgSRC, name, post, fbLink, linkedinLink } = data;
   /* ******************************** RENDERING ******************************* */
   return (
     <>
-      <div className="profileContainer">
+      <div className="lst-single-profile">
         <img className="profilePic" alt="" src={imgSRC} />
         <div className="linearGradientDiv" />
         <div className="contentContainer">

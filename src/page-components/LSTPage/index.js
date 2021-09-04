@@ -6,24 +6,24 @@
 import React from 'react';
 
 // Local images
-import nabnab from '../../../assets/images/lstPage/nabil.png';
-import amal from '../../../assets/images/lstPage/amal.png';
-import melek from '../../../assets/images/lstPage/melek.png';
-import chedi from '../../../assets/images/lstPage/chedi.png';
-import ibrahim from '../../../assets/images/lstPage/ibrahim.png';
-import walid from '../../../assets/images/lstPage/walid.png';
-import rJarboui from '../../../assets/images/lstPage/rJarboui.png';
-import rBechi from '../../../assets/images/lstPage/rBechi.png';
+import nabnab from '../../assets/images/lstPage/nabil.png';
+import amal from '../../assets/images/lstPage/amal.png';
+import melek from '../../assets/images/lstPage/melek.png';
+import chedi from '../../assets/images/lstPage/chedi.png';
+import ibrahim from '../../assets/images/lstPage/ibrahim.png';
+import walid from '../../assets/images/lstPage/walid.png';
+import rJarboui from '../../assets/images/lstPage/rJarboui.png';
+import rBechi from '../../assets/images/lstPage/rBechi.png';
 
 // Style
 import './index.scss';
 import SingleProfile from './SingleProfile';
-import WannaKnowUs from '../WannaKnowUs';
+import WannaKnowUs from './wanna-know-us';
 
 /* -------------------------------------------------------------------------- */
 /*                             Who Are We Section                             */
 /* -------------------------------------------------------------------------- */
-function MidSection() {
+function LST() {
   /* ---------------------------------- CONST --------------------------------- */
   const arrayLST = [
     {
@@ -111,4 +111,4 @@ function MidSection() {
   );
 }
 
-export default MidSection;
+export default LST;

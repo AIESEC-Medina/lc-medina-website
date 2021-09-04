@@ -5,9 +5,6 @@
 // Packages
 import React from 'react';
 
-// Local images
-/* ------- import AIESEC_IMG from '../../../assets/images/AIESEC.png'; ------ */
-
 // Style
 import './index.scss';
 
@@ -17,7 +14,7 @@ import './index.scss';
 function WannaKnowUs() {
   /* ******************************** RENDERING ******************************* */
   return (
-    <div className="container">
+    <div className="who-are-we">
       <p className="boxedText"> Wanna Know Us? </p>
       <h1 className="ourTeam">Our Team</h1>
       <p className="meetUs">Meet the Local Support Team!</p>

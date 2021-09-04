@@ -7,23 +7,22 @@ import React from 'react';
 import Layout from '../shared/Layout';
 import Seo from '../shared/Seo/index';
 
-// Local page components
-import MidSection from '../page-components/LSTPage/MidSection';
-// import Ourstory from '../page-components/LSTPage/OurStory';
+// local UI component
+import LST from '../page-components/LSTPage';
 
 /* -------------------------------------------------------------------------- */
-/*                               LST Page                                */
+/*                                 LST Page                                   */
 /* -------------------------------------------------------------------------- */
-function LST() {
+function LSTPage() {
   /* ******************************** RENDERING ******************************* */
   return (
     <>
       <Seo title="LST" />
       <Layout>
-        <MidSection />
+        <LST />
       </Layout>
     </>
   );
 }
 
-export default LST;
+export default LSTPage;

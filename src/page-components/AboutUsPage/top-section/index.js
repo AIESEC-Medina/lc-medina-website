@@ -27,8 +27,6 @@ function TopSection() {
         <div className="intro-info">
           <h1 className="animated-text">
             <Typical
-              loop={Infinity}
-              wrapper="w"
               steps={[
                 'intership with aiesec',
                 1500,
@@ -39,6 +37,7 @@ function TopSection() {
                 'develop yourself with aiesec',
                 1500,
               ]}
+              loop={Infinity}
             />
           </h1>
           <h2 className="what-are-we">We are a youth leadership movement</h2>

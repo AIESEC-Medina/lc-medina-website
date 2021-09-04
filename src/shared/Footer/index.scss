@@ -45,12 +45,16 @@
     }
     .right-side {
       .social-networks {
-        img {
-          margin: 0 14px;
-          cursor: pointer;
-          opacity: 0.85;
-          &:hover {
-            opacity: 1;
+        a {
+          line-height: 0;
+          img {
+            margin: 0 14px;
+            cursor: pointer;
+            opacity: 0.85;
+            width: 1.15rem;
+            &:hover {
+              opacity: 1;
+            }
           }
         }
       }

@@ -8,8 +8,7 @@ import React from 'react';
 // UI lib comoponents
 
 // Local UI components
-import PartnerImg from '../../assets/images/partner.png';
-// @TODO: Import other locally-made dependencies here
+import PartnerImg from '../../../assets/images/partner.png';
 
 // Style
 import './index.scss';
