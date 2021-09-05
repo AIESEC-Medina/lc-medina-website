@@ -6,8 +6,19 @@
   background-size: cover;
   z-index: 1;
   left: 0;
+  @media (max-width: 900px) {
+    position: relative;
+    .sidetext {
+      bottom: 75px !important;
+    }
+    .side-logo {
+      left: 48px;
+    }
+    .gradient {
+      position: relative;
+    }
+  }
   .side-logo {
-    left: 58px;
     top: 42px;
     width: 80px;
     z-index: 2;

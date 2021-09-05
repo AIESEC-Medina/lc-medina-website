@@ -13,7 +13,7 @@ import Seo from '../shared/Seo';
 import TopSection from '../page-components/IndexPage/top-section';
 import ProductsSection from '../page-components/IndexPage/products';
 import HowItWorksSection from '../page-components/IndexPage/how-it-works';
-import AIESECOpportunities from '../page-components/IndexPage/aiesec-opportunities';
+import AIESECGroups from '../page-components/IndexPage/aiesec-groups';
 import LST from '../page-components/LSTPage';
 
 /* -------------------------------------------------------------------------- */
@@ -27,7 +27,7 @@ function IndexPage() {
       <TopSection />
       <ProductsSection />
       <HowItWorksSection />
-      <AIESECOpportunities />
+      <AIESECGroups />
       <LST />
     </Layout>
   );

@@ -8,6 +8,10 @@
   width: 652px;
   text-align: left;
   position: relative;
+  @media (max-width: 900px) {
+    margin-left: 0;
+    width: 100%;
+  }
   .formgroup {
     margin-top: 40px;
     .labels {

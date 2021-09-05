@@ -29,8 +29,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'aiesec-in-manouba-website',
-        short_name: 'AIESEC In Manouba Website',
+        name: 'AIESEC In Manouba',
+        short_name: 'AIESEC In Manouba',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#fff',
@@ -42,6 +42,18 @@ module.exports = {
       resolve: 'gatsby-plugin-tawk',
       options: {
         tawkId: '5f6538ef4704467e89f04a58',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-redirect',
+      options: {
+        headers: {},
+        allPageHeaders: ['/', '/about-us', '/lst', '/partnership'],
+        mergeSecurityHeaders: true,
+        mergeLinkHeaders: true,
+        mergeCachingHeaders: true,
+        transformHeaders: (headers) => headers,
+        generateMatchPathRewrites: true,
       },
     },
     'gatsby-plugin-gatsby-cloud',

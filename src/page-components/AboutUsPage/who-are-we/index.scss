@@ -56,6 +56,76 @@
         transform: scale(1.02);
       }
     }
+
+    @media (max-width: 900px) {
+      margin-top: 4rem;
+      .section-1,
+      .section-2 {
+        flex-direction: column;
+      }
+      .section-1 {
+        .right-side {
+          width: 100% !important;
+          margin-top: 2rem;
+          .all-counters {
+            .double-counters {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+      .section-2 {
+        .left-side {
+          width: 100% !important;
+        }
+      }
+      .section-1,
+      .section-2 {
+        .what-we-do {
+          font-size: 18px !important;
+          padding: 0 15px;
+        }
+        .description {
+          font-size: 16px !important;
+          padding: 0 15px;
+        }
+      }
+      .section-2 {
+        margin-top: 2rem;
+        .left-side {
+          .play-video-btn {
+            padding: 0 15px;
+            .watch_video {
+              h5,
+              p {
+                font-size: 14px !important;
+              }
+            }
+          }
+        }
+        .right-side {
+          left: -2rem !important;
+          .medina-img {
+            width: 221px;
+          }
+          .medina_1-img {
+            width: 230px;
+            left: 3rem;
+          }
+        }
+      }
+      .wave-img {
+        bottom: 0 !important;
+      }
+      .alq-img {
+        left: 3rem;
+        width: 185px;
+      }
+      .aiesec-img {
+        width: 220px;
+      }
+    }
+
     .section-1 {
       display: flex;
       align-items: center;

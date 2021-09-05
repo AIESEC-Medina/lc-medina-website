@@ -38,7 +38,7 @@ function Footer() {
           <p className="title">About</p>
           <ul className="list">
             <li className="list-item">
-              <Link to="/">About MEDINA</Link>
+              <Link to="/about-us">About MEDINA</Link>
             </li>
             <li className="list-item">
               <Link to="/">Help</Link>
@@ -86,7 +86,7 @@ function Footer() {
               <Link to="/">Join medina-up</Link>
             </li>
             <li className="list-item">
-              <Link to="/">Partnership</Link>
+              <Link to="/partnership">Partnership</Link>
             </li>
           </ul>
         </div>
