@@ -39,12 +39,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-tawk',
-      options: {
-        tawkId: '5f6538ef4704467e89f04a58',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-netlify-redirect',
       options: {
         headers: {},
