@@ -4,6 +4,7 @@
 
 // Packages
 import React from 'react';
+import { Container } from 'react-grid-system';
 
 // Local images
 import AIESEC_IMG from '../../../assets/images/AIESEC.png';
@@ -35,7 +36,7 @@ function WhoAreWe() {
             AIESEC Leadership Qualities.
           </p>
           <div className="all-counters">
-            <div className="double-counters flex items-center">
+            <Container className="double-counters flex items-center">
               <div className="single-counter">
                 <span className="count">+20</span>
                 <p className="title">Partner Organizations</p>
@@ -44,8 +45,8 @@ function WhoAreWe() {
                 <span className="count">+20</span>
                 <p className="title">Countries & Territoriess</p>
               </div>
-            </div>
-            <div className="double-counters flex items-center">
+            </Container>
+            <Container className="double-counters flex items-center">
               <div className="single-counter">
                 <span className="count">+500</span>
                 <p className="title">Experience every year</p>
@@ -54,7 +55,7 @@ function WhoAreWe() {
                 <span className="count">+30.000</span>
                 <p className="title">Student within campus</p>
               </div>
-            </div>
+            </Container>
           </div>
         </div>
       </div>

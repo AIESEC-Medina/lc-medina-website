@@ -18,6 +18,7 @@ function TopSection() {
   /* ******************************** RENDERING ******************************* */
   return (
     <div className="landing-banner">
+      <div className="banner-bg" />
       <div className="top-section">
         <div className="content">
           <div className="badge flex items-center">
