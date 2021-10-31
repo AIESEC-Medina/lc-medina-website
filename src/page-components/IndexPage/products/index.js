@@ -6,9 +6,9 @@
 import React from 'react';
 
 // Local images
-import GV_ICON from '../../../assets/icons/gv.svg';
-import GTE_ICON from '../../../assets/icons/gte.svg';
-import GTA_ICON from '../../../assets/icons/gta.svg';
+import GV_ICON from '../../../assets/icons/our-products/gv/gv.svg';
+import GTE_ICON from '../../../assets/icons/our-products/gte/gte.svg';
+import GTA_ICON from '../../../assets/icons/our-products/gta/gta.svg';
 
 // Style
 import './index.scss';

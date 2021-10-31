@@ -82,23 +82,32 @@ function Header({ whiteLink }) {
             <li className="list-item">
               <Link
                 className={`link ${!isScrolled && whiteLink && 'white-link'}`}
-                to="/"
+                to="/our-products"
               >
                 Our products
               </Link>
               <ul className="collapse-list">
                 <li className="collapse-item">
-                  <Link className="collapse-link" to="/about-us">
+                  <Link
+                    className="collapse-link"
+                    to="/our-products/global-volunteer"
+                  >
                     Global Volunteer
                   </Link>
                 </li>
                 <li className="collapse-item">
-                  <Link className="collapse-link" to="/about-us">
+                  <Link
+                    className="collapse-link"
+                    to="/our-products/global-talent"
+                  >
                     Global Talent
                   </Link>
                 </li>
                 <li className="collapse-item">
-                  <Link className="collapse-link" to="/about-us">
+                  <Link
+                    className="collapse-link"
+                    to="/our-products/global-teacher"
+                  >
                     Global Teacher
                   </Link>
                 </li>
