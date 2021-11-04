@@ -32,25 +32,27 @@ function EventsBlogPage() {
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.',
       readMoreLink: 'https://www.youtube.com/watch?v=xvFZjo5PgG0',
-      secondaryColor: {color: '#037Ef3'}
+      secondaryColor: { color: '#037Ef3' },
     },
     {
       eventImg: event2,
       title: 'Lorem ipsum',
       subtitle: ' dolor sit amet ',
       description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.'+'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.',
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.' +
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.',
       readMoreLink: 'https://www.youtube.com/watch?v=xvFZjo5PgG0',
-      secondaryColor: {color:'#F85A40'}
+      secondaryColor: { color: '#F85A40' },
     },
     {
       eventImg: event3,
       title: 'Lorem ipsum',
       subtitle: ' dolor sit amet ',
       description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.'+'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.',
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.' +
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.',
       readMoreLink: 'https://www.youtube.com/watch?v=xvFZjo5PgG0',
-      secondaryColor: {color: '#30C39E'}
+      secondaryColor: { color: '#30C39E' },
     },
   ];
   /* ******************************** RENDERING ******************************* */
@@ -64,21 +66,19 @@ function EventsBlogPage() {
       </div>
       <div className="ArticleBox">
         <div className="ArticleRow">
-          <EventsArticle className="singleBox" data={ dataArray[0]} />
-          <EventsArticle className="singleBox" data={ dataArray[0]} />        
-          <EventsArticle className="singleBox" data={ dataArray[0]} />
+          <EventsArticle className="singleBox" data={dataArray[0]} />
+          <EventsArticle className="singleBox" data={dataArray[0]} />
+          <EventsArticle className="singleBox" data={dataArray[0]} />
         </div>
         <div className="ArticleRow">
-          <EventsArticle className="singleBox" data={ dataArray[1]} />
-          <EventsArticle className="singleBox" data={ dataArray[1]} />        
-          <EventsArticle className="singleBox" data={ dataArray[1]} />
+          <EventsArticle className="singleBox" data={dataArray[1]} />
+          <EventsArticle className="singleBox" data={dataArray[1]} />
+          <EventsArticle className="singleBox" data={dataArray[1]} />
         </div>
         <div className="ArticleRow">
-      
-          <EventsArticle className="singleBox" data={ dataArray[2]} />
-          <EventsArticle className="singleBox" data={ dataArray[2]} />        
-          <EventsArticle className="singleBox" data={ dataArray[2]} />
-
+          <EventsArticle className="singleBox" data={dataArray[2]} />
+          <EventsArticle className="singleBox" data={dataArray[2]} />
+          <EventsArticle className="singleBox" data={dataArray[2]} />
         </div>
       </div>
       <div className="ButtonBox">
