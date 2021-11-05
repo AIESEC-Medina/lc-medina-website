@@ -42,7 +42,7 @@ function EventsBlogPage() {
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.' +
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.',
       readMoreLink: 'https://www.youtube.com/watch?v=xvFZjo5PgG0',
-      secondaryColor: { color: '#F85A40' },
+      secondaryColor: { color: '#037Ef3' }, // '#F85A40'
     },
     {
       eventImg: event3,
@@ -52,7 +52,7 @@ function EventsBlogPage() {
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.' +
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui repellat officia optio quibusdam cumque.',
       readMoreLink: 'https://www.youtube.com/watch?v=xvFZjo5PgG0',
-      secondaryColor: { color: '#30C39E' },
+      secondaryColor: { color: '#037Ef3' }, // '#30C39E'
     },
   ];
   /* ******************************** RENDERING ******************************* */
@@ -65,6 +65,9 @@ function EventsBlogPage() {
         <EventsSlider />
       </div>
       <div className="ArticleBox">
+        <div className="ArticleRow">
+          <div className="ArticleTitle">Events Articles</div>
+        </div>
         <div className="ArticleRow">
           <EventsArticle className="singleBox" data={dataArray[0]} />
           <EventsArticle className="singleBox" data={dataArray[0]} />

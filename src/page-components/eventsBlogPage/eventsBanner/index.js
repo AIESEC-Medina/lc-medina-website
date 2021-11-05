@@ -6,7 +6,7 @@
 import React from 'react';
 
 // Local images
-import banner from '../../../assets/images/eventsBlogPage/banner.jpg';
+import banner from '../../../assets/images/eventsBlogPage/banner.png';
 
 // Style
 import './index.scss';
