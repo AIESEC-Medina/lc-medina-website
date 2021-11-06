@@ -20,16 +20,16 @@ import './index.scss';
 /* -------------------------------------------------------------------------- */
 function EventsSlider() {
   // render() {}
-  
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
   };
   /* ******************************** RENDERING ******************************* */
-  return  (
+  return (
     <div className="SliderContainer">
       {/* <h2> Multiple items </h2> */}
       <div className="OurEventsH2">OUR EVENTS - OUR EVENTS -OUR EVENTS</div>
@@ -45,11 +45,10 @@ function EventsSlider() {
         </div>
         <div>
           <img src={event4} alt="" />
-        </div>        
+        </div>
       </Slider>
     </div>
   );
-
 }
 
 export default EventsSlider;
