@@ -15,7 +15,14 @@ function SeeMoreButton() {
   /* ******************************** RENDERING ******************************* */
   return (
     <div className="Button">
-      <div className="textBox">SEE MORE</div>
+      <a
+        href="http://localhost:8000/events-blog"
+        target="_blank"
+        className="textBox"
+        rel="noreferrer"
+      >
+        SEE MORE
+      </a>
     </div>
   );
 }

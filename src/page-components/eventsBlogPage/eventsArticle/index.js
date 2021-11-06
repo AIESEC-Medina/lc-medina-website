@@ -32,7 +32,9 @@ function EventsArticle({ data }) {
         <div className="Subtitle" style={secondaryColor}>
           {subtitle}
         </div>
-        <div className="Description">{description}</div>
+        <div className="Description" id="Scrollable">
+          {description}
+        </div>
         <div className="ReadMore">
           <a
             target="_blank"
