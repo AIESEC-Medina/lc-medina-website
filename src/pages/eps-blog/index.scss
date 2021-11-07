@@ -2,13 +2,14 @@
 
 
 .Image-container {
-  background: url("../../assets/images/landing-bg.jpg");
+  background: url("../../assets/icons/Eps-blog/people.png") no-repeat ;
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 61vh;
   width: 100vw;
+
 
   h1 {
 
@@ -67,40 +68,42 @@
 
   }
 
-  .product-slider {
-    background-color: #0A8EA0;
-    width: 100vw;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    height: 320px;
+  // .product-slider {
+  //   background-color: #0A8EA0;
+  //   width: 100vw;
+  //   display: flex;
+  //   text-align: center;
+  //   justify-content: space-between;
+  //   height: 320px;
 
-    .img-product {
-      width: 25rem;
-    }
+  //   .img-product {
+  //     width: 25rem;
+  //   }
 
-    :first-child,
-    :last-child {
-      width: 4rem;
-      margin: 0 30px;
-      cursor: pointer;
+  //   :first-child,
+  //   :last-child {
+  //     width: 4rem;
+  //     margin: 0 30px;
+  //     cursor: pointer;
 
 
-    }
+  //   }
 
-  }
+  // }
 
 
 
 }
+.section-blogs{
 
-.blogs-container {
-
+  .blogs-container {
+  z-index: 100;
   margin: 30px 60px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));;
   grid-column-gap: 20px;
   gap: 40px;
+
 
 
   .Blog {
@@ -111,6 +114,7 @@
     overflow: none;
     text-overflow: ellipsis;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 100;
     border-radius: 25px;
 
     img {
@@ -167,3 +171,6 @@
 
   }
 }
+
+}
+
