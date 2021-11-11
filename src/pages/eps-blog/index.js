@@ -6,6 +6,7 @@ import Seo from '../../shared/Seo';
 import { Link } from 'gatsby';
 import BlogImage from '../../assets/icons/Eps-blog/volunteer-header.png';
 import SliderProduct from '../../page-components/eps-blog/Product-slider';
+import WAVE from '../../assets/files/wave.png';
 
 // eslint-disable-next-line import/order
 // import Slider from 'react-slick';
@@ -32,6 +33,7 @@ function epsBlog() {
         </div>
         <SliderProduct />
         <div className="section-blogs">
+          <img className="wave" src={WAVE} alt="" />
           <div className="blogs-container">
             <div className="Blog">
               <img src={BlogImage} alt="Blog" />
@@ -47,6 +49,51 @@ function epsBlog() {
                 <p className="R-more">Read more </p>
               </div>
             </div>
+            <div className="Blog">
+              <img src={BlogImage} alt="Blog" />
+              <div className="blog-content">
+                <h1>Title comes over here ………… Title title title</h1>
+                <h2>flen fouleni</h2>
+                <p>
+                  hagkayjzhpaj hoizgha ouizg alzjf alzjkg faiu akzrjgfblakjzgr
+                  lajzkrg lakjrh pajkzh, gakjhzr aokzjt fajkzef gaokjzleh
+                  foakjzge azjlg flazjr lakzjrg akzjehf akjze foakjr gbflakjr
+                  gpaiur hf azkrh lakh pajkhz rgmlkazh falkrhg aklh …
+                </p>
+                <p className="R-more">Read more </p>
+              </div>
+            </div>
+            <div className="Blog">
+              <img src={BlogImage} alt="Blog" />
+              <div className="blog-content">
+                <h1>Title comes over here ………… Title title title</h1>
+                <h2>flen fouleni</h2>
+                <p>
+                  hagkayjzhpaj hoizgha ouizg alzjf alzjkg faiu akzrjgfblakjzgr
+                  lajzkrg lakjrh pajkzh, gakjhzr aokzjt fajkzef gaokjzleh
+                  foakjzge azjlg flazjr lakzjrg akzjehf akjze foakjr gbflakjr
+                  gpaiur hf azkrh lakh pajkhz rgmlkazh falkrhg aklh …
+                </p>
+                <p className="R-more">Read more </p>
+              </div>
+            </div>
+            <div className="Blog">
+              <img src={BlogImage} alt="Blog" />
+              <div className="blog-content">
+                <h1>Title comes over here ………… Title title title</h1>
+                <h2>flen fouleni</h2>
+                <p>
+                  hagkayjzhpaj hoizgha ouizg alzjf alzjkg faiu akzrjgfblakjzgr
+                  lajzkrg lakjrh pajkzh, gakjhzr aokzjt fajkzef gaokjzleh
+                  foakjzge azjlg flazjr lakzjrg akzjehf akjze foakjr gbflakjr
+                  gpaiur hf azkrh lakh pajkhz rgmlkazh falkrhg aklh …
+                </p>
+                <p className="R-more">Read more </p>
+              </div>
+            </div>
+          </div>
+          <div className="Seeless-Btn">
+            <p className="seeLess"> See Less</p>
           </div>
         </div>
       </Layout>
