@@ -1,15 +1,18 @@
+/* -------------------------------------------------------------------------- */
+/*                                Dependencies                                */
+/* -------------------------------------------------------------------------- */
+
 import React from 'react';
-import Layout from '../../shared/Layout';
 import './index.scss';
+
+/* ------------------------------ page wrapper ------------------------------ */
+import Layout from '../../shared/Layout';
 import Seo from '../../shared/Seo';
 // eslint-disable-next-line import/order
 import { Link } from 'gatsby';
 import BlogImage from '../../assets/icons/Eps-blog/volunteer-header.png';
 import SliderProduct from '../../page-components/eps-blog/Product-slider';
 import WAVE from '../../assets/files/wave.png';
-
-// eslint-disable-next-line import/order
-// import Slider from 'react-slick';
 
 function epsBlog() {
   return (

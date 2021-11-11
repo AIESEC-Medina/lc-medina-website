@@ -122,7 +122,7 @@ function Header({ whiteLink }) {
               </Link>
               <ul className="collapse-list">
                 <li className="collapse-item">
-                  <Link className="collapse-link" to="/about-us">
+                  <Link className="collapse-link" to="/eps-blog">
                     Young people
                   </Link>
                 </li>
