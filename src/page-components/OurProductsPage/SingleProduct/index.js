@@ -28,7 +28,15 @@ import './index.scss';
 /* -------------------------------------------------------------------------- */
 /*                             Who Are We Section                             */
 /* -------------------------------------------------------------------------- */
-function SingleProduct({ PRODUCT_IMG, IMG1, IMG2, IMG3, oppsBtn, palette, building }) {
+function SingleProduct({
+  PRODUCT_IMG,
+  IMG1,
+  IMG2,
+  IMG3,
+  oppsBtn,
+  palette,
+  building,
+}) {
   /* ******************************** RENDERING ******************************* */
 
   return (
