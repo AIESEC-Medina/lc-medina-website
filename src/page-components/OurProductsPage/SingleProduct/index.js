@@ -28,7 +28,7 @@ import './index.scss';
 /* -------------------------------------------------------------------------- */
 /*                             Who Are We Section                             */
 /* -------------------------------------------------------------------------- */
-function SingleProduct({ PRODUCT_IMG, IMG1, IMG2, IMG3, oppsBtn, palette }) {
+function SingleProduct({ PRODUCT_IMG, IMG1, IMG2, IMG3, oppsBtn, palette, building }) {
   /* ******************************** RENDERING ******************************* */
 
   return (
@@ -43,7 +43,7 @@ function SingleProduct({ PRODUCT_IMG, IMG1, IMG2, IMG3, oppsBtn, palette }) {
       </div>
 
       <div className="product-3d">
-        <Canvas camera={[0, -10, 0]}>
+        <Canvas>
           <ambientLight intensity={0.7} />
           <spotLight
             intensity={0.5}
@@ -53,18 +53,18 @@ function SingleProduct({ PRODUCT_IMG, IMG1, IMG2, IMG3, oppsBtn, palette }) {
             castShadow
           />
           <Suspense fallback={null}>
-            <mesh position={[0, -2, 0]}>
-              <Building />
+            <mesh position={[-8, -5, 0]}>
+              <Building building={building} />
             </mesh>
           </Suspense>
           <OrbitControls
-            position={[5, -15, 3]}
-            autoRotate
-            zoom0={5}
-            maxPolarAngle={Math.PI / 3 - 1}
+            position={[10, -5, 3]}
+            autoRotate={false}
+            zoom0={10}
+            maxPolarAngle={Math.PI / 8 - 1}
             minPolarAngle={Math.PI / 2 - 1}
             enablePan
-            enableZoom={false}
+            onWheel={(e) => console.log(e)}
           />
         </Canvas>
       </div>
@@ -267,6 +267,7 @@ SingleProduct.propTypes = {
   IMG3: PropTypes.string.isRequired,
   oppsBtn: PropTypes.string.isRequired,
   palette: PropTypes.string.isRequired,
+  building: PropTypes.string.isRequired,
 };
 
 export default SingleProduct;

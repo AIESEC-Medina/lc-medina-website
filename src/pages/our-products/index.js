@@ -63,6 +63,7 @@ function OurProducts({ location }) {
           IMG3={GV_IMG3}
           oppsBtn="GV"
           palette={getColorPalette()}
+          building="/gv_3d.glb"
         />
       );
     }
@@ -76,6 +77,7 @@ function OurProducts({ location }) {
           IMG3={GTA_IMG3}
           oppsBtn="GTA"
           palette={getColorPalette()}
+          building="/gt.glb"
         />
       );
     }
@@ -88,6 +90,7 @@ function OurProducts({ location }) {
         IMG3={GTE_IMG3}
         oppsBtn="GTE"
         palette={getColorPalette()}
+        building="/tt.glb"
       />
     );
   }

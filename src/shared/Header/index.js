@@ -82,7 +82,7 @@ function Header({ whiteLink }) {
             <li className="list-item">
               <Link
                 className={`link ${!isScrolled && whiteLink && 'white-link'}`}
-                to="/our-products"
+                to="/about-us"
               >
                 Our products
               </Link>
